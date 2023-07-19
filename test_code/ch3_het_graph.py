@@ -1,7 +1,9 @@
 # 异构图上的GraphConv模块
 # 每个关系上的DGL NN模块
 # 聚合来自不同关系上的结果
+import dgl
 import torch.nn as nn
+# DGL NN模块用于处理一种关系的消息传递和聚合
 
 class HeteroGraphConv(nn.Module):
     """
